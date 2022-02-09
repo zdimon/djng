@@ -1,0 +1,29 @@
+{
+    "title": "Payment types",
+    "root": "admin",
+    "dirname": "payment_type",
+    "fileprefix": "payment.type",
+    "camelName": "paymentType",
+    "upname": "PaymentType",
+    "url_list": "payment/admin/type/",
+    "url_create": "payment/admin/type/",
+    "url_update": "payment/admin/type/",
+    "url_delete": "payment/admin/type/",
+    "rout": "payment/type",
+    "new_button": true,
+    "edit_button": true,
+    "list_fields": [
+        {"name": "id", "type": "number", "title": "ID"},
+        {"name": "name", "type": "string", "title": "Name"},
+        {"name": "procent_for_agency", "type": "number", "title": "Agency bonus %"},
+        {"name": "alias", "type": "string", "title": "Alias"},
+        {"name": "price", "type": "number", "title": "Price"}
+    ],
+    "edit_fields": [
+        {"name": "price", "type": "number", "title": "Price"},
+        {"name": "alias", "type": "string", "title": "Price", "readonly": "true"},
+        {"name": "name", "type": "string", "title": "Name", "readonly": "true"},
+        {"name": "procent_for_agency", "type": "number", "title": "Agency bonus %"}
+    ]
+}
+

@@ -1,0 +1,5 @@
+ng build --prod
+git add .
+git commit -m 'auto build'
+git push
+ssh webmaster@dating-test.webmonstr.com 'cd dating-adm; git pull'

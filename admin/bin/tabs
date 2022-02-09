@@ -1,0 +1,2 @@
+# replacing tabs to spaces
+find ./ -iname '*.ts' -type f -exec bash -c 'expand -t 4 "$0" | sponge "$0"' {} \;

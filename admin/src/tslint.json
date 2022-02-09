@@ -1,0 +1,27 @@
+{
+  "extends": "../tslint.json",
+  "rules": {
+	 "max-line-length": {
+		  "options": [120]
+	 },
+    "directive-selector": [
+      true,
+      "attribute",
+      "kt",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "kt",
+      "kebab-case"
+    ],
+	"no-console": {
+		"severity": "warning",
+		"options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+	},
+	 "only-arrow-functions": {
+		"options": ["allow-declarations", "allow-named-functions"]
+	 }
+  }
+}
