@@ -1,8 +1,5 @@
 <!--begin::Head-->
-<div class="kt-login__head">
-	<span class="kt-login__signup-label">Don't have an account yet?</span>&nbsp;&nbsp;
-	<a href="javascript:;" routerLink="/auth/register" class="kt-link kt-login__signup-link">{{ 'AUTH.GENERAL.SIGNUP_BUTTON' | translate }}</a>
-</div>
+
 <!--end::Head-->
 
 <!--begin::Body-->
@@ -52,9 +49,7 @@
 			</div>
 			<!--begin::Action-->
 			<div class="kt-login__actions">
-				<a href="javascript:;" routerLink="/auth/forgot-password" class="kt-link kt-login__link-forgot">
-					{{ 'AUTH.GENERAL.FORGOT_BUTTON' | translate }}
-				</a>
+				
 				<button (click)="submit()" [ngClass]="{'kt-spinner kt-spinner--right kt-spinner--md kt-spinner--light': loading}" id="kt_login_signin_submit" class="btn btn-primary btn-elevate kt-login__btn-primary">{{ 'AUTH.LOGIN.BUTTON' | translate }}</button>
 			</div>
 			<!--end::Action-->
@@ -62,37 +57,9 @@
 		<!--end::Form-->
 
 		
-		<div class="kt-login__divider">
-			<div class="kt-divider">
-				<span></span>
-				<span>Login as</span>
-				<span></span>
-			</div>
-		</div>
-		
+	
 
 		
-		<div class="kt-login__options">
-			<a  class="btn btn-primary kt-btn" style="color: white" (click)="loginAs('agency-director-agency1')">
-				Director
-			</a>
-
-			<a  class="btn btn-primary kt-btn" style="color: white" (click)="loginAs('agency-manager-agency1')">
-				Manager
-			</a>
-
-			<a  class="btn btn-primary kt-btn" style="color: white" (click)="loginAs('moderator')">
-				Moderator
-			</a>
-
-			<a  class="btn btn-primary kt-btn" style="color: white" (click)="loginAs('admin')">
-				Admin
-			</a>
-
-			<a  class="btn btn-primary kt-btn" style="color: white" (click)="loginAs('webmaster1')">
-				Webmaster
-			</a>
-		</div>
 		
 	</div>
 	<!--end::Signin-->

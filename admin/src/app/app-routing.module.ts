@@ -20,28 +20,8 @@ const routes: Routes = [
                 loadChildren: () => import('app/views/pages/dashboard/dashboard.module').then(m => m.DashboardModule),
             },
             {
-                path: 'payment/type',
-                loadChildren: () => import('app/views/admin/payment_type/view/payment.type.module').then(m => m.PaymentTypeModule),
-            },
-            {
-                path: 'payment',
-                loadChildren: () => import('app/views/admin/payment/view/payment.module').then(m => m.PaymentModule),
-            },
-            {
-                path: 'log',
-                loadChildren: () => import('app/views/admin/log/view/log.module').then(m => m.LogModule),
-            },
-            {
                 path: 'user',
                 loadChildren: () => import('app/views/admin/user/view/user.module').then(m => m.UserModule),
-            },
-            {
-                path: 'plan',
-                loadChildren: () => import('app/views/admin/plan/view/plan.module').then(m => m.PlanModule),
-            },
-            {
-                path: 'moderation',
-                loadChildren: () => import('app/views/admin/moderation/view/moderation.module').then(m => m.ModerationModule),
             },
             {
                 path: 'error/403',

@@ -1,0 +1,17 @@
+*.pyc
+venv/
+node_modules/
+/package-lock.json
+backend/backend/local.py
+doc/_build
+backend/db.sqlite3
+backend/media
+#backend/locale
+backend/celerybeat.pid
+.vscode
+backend/tmp
+.idea
+dump.rdb
+.DS_Store
+.mypy_cache
+.idea
