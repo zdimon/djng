@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'oauth2_provider',
-    'rest_framework_social_oauth2',
     'autogen',
     'account'
 ]
@@ -145,7 +144,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
-        'rest_framework_social_oauth2.authentication.SocialAuthentication',
     ),
     'DEFAULT_PAGINATION_CLASS': 'backend.angular_paginator.AngularPagination',
     'PAGE_SIZE': 30,

@@ -11,7 +11,7 @@ class AdminUserListView(generics.ListAPIView):
     queryset = User.objects.all()
     # filter_backends = DjangoFilterBackend,
     filterset_fields = ['username', 'email']
-    # filter_class = UserFilter
+    #filter_class = UserFilter
 
 class AdminUserView(APIView):
     permission_classes = {IsAuthenticated}
