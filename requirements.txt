@@ -1,6 +1,5 @@
 wheel
 Django
-bs4
 djangorestframework
 djangorestframework-jwt
 django-cors-headers

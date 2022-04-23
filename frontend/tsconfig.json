@@ -23,6 +23,7 @@
 	"paths": {
 		"@base/*": ["../src/app/core/_base/*"],
 		"@core/*": ["../src/app/core/*"]
-	}
+	},
+  "skipLibCheck": true
   }
 }
