@@ -1,0 +1,1435 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-03 07:44+0000\n"
+"PO-Revision-Date: 2020-03-03 07:46+0000\n"
+"Last-Translator: b'  <admin@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: account/dashboard.py:30 trans/parts/nav.py:3
+msgid "Applications"
+msgstr ""
+
+#: account/dashboard.py:37
+#, fuzzy
+#| msgid "User payment"
+msgid "User media"
+msgstr "Оплата пользователей "
+
+#: account/dashboard.py:45
+#, fuzzy
+#| msgid "Type of media"
+msgid "Feed media"
+msgstr "Тип носителя"
+
+#: account/models.py:30
+msgid "Man"
+msgstr "Мужчина"
+
+#: account/models.py:31
+msgid "Woman"
+msgstr "Женщина"
+
+#: account/models.py:34 account/models.py:35 trans/parts/admin.py:6
+#: trans/parts/regform.py:5
+msgid "About me"
+msgstr "Обо мне"
+
+#: account/models.py:38 administration/models.py:14 agency/models.py:35
+#: agency/models.py:105 props/management/commands/utils.py:43
+#: webmaster/models.py:32
+msgid "Language"
+msgstr "Язык"
+
+#: account/models.py:44
+msgid "Gender"
+msgstr "Пол"
+
+#: account/models.py:233
+msgid "Profile verify files"
+msgstr ""
+
+#: account/models.py:234
+msgid "Profile verify file"
+msgstr ""
+
+#: account/models.py:250
+msgid "Password Reset Token"
+msgstr "Маркер Сброса Пароля"
+
+#: account/models.py:251
+msgid "Password Reset Tokens"
+msgstr "Сброс Пароля Маркеры"
+
+#: account/models.py:265
+msgid "The User which is associated to this password reset token"
+msgstr "Пользователь, связанный с такой маркер сброса пароля"
+
+#: account/models.py:270
+msgid "When was this token generated"
+msgstr "Когда был этот токен генерируется"
+
+#: account/models.py:274
+msgid "Key"
+msgstr "Ключ"
+
+#: account/models.py:281
+msgid "The IP address of this session"
+msgstr "IP-адрес этой сессии"
+
+#: account/models.py:289
+msgid "HTTP user Agent"
+msgstr "Агент пользователя http "
+
+#: account/serializers.py:50 trans/parts/loginform.py:5
+msgid "Password"
+msgstr "Пароль"
+
+#: account/views/admin/login.py:31
+msgid "Login or password is incorect!"
+msgstr "Логин или пароль является неправильным!"
+
+#: account/views/auth.py:37
+msgid "User account is disabled."
+msgstr ""
+
+#: account/views/auth.py:40
+msgid "Unable to log in with provided credentials."
+msgstr ""
+
+#: account/views/auth.py:43
+msgid "Must include \"email or username\" and \"password\""
+msgstr ""
+
+#: account/views/auth.py:93
+msgid "Your account is blocked!"
+msgstr ""
+
+#: account/views/password.py:72 account/views/password.py:133
+msgid "Your password has been changed."
+msgstr "Ваш пароль был изменен."
+
+#: account/views/password.py:102
+msgid ""
+"There is no active user associated with this e-mail address or the password "
+"can not be changed"
+msgstr ""
+"Нет активных пользователей, связанный с этим e-mail адрес или пароль не "
+"может быть изменен"
+
+#: account/views/profile.py:166
+msgid "No! You need to donload passport!."
+msgstr ""
+
+#: account/views/profile.py:171
+msgid "No! You need to donload a psych report!."
+msgstr ""
+
+#: account/views/profile.py:191
+msgid "Thankyou, you documents hass been sent to the moderator."
+msgstr ""
+
+#: agency/models.py:12 webmaster/models.py:14
+msgid "Privatbank"
+msgstr "ПриватБанк"
+
+#: agency/models.py:13 webmaster/models.py:15
+msgid "Epay"
+msgstr "ЕРАУ"
+
+#: agency/models.py:18 agency/models.py:19 agency/models.py:111
+#: agency/models.py:112 moderation/models.py:31 payment/models.py:29
+#: payment/models.py:30 props/models.py:13 props/models.py:14
+#: props/models.py:55 props/models.py:56 trans/parts/admin.py:4
+#: trans/parts/regform.py:3 webmaster/models.py:20 webmaster/models.py:21
+msgid "Name"
+msgstr "Название"
+
+#: agency/models.py:24
+msgid "Name and Surname of the Boss"
+msgstr "Имя и фамилия босс"
+
+#: agency/models.py:30 webmaster/models.py:27
+msgid "Adress"
+msgstr "Адрес"
+
+#: agency/models.py:31 webmaster/models.py:28
+msgid "Ardess of the office"
+msgstr "Ardess управления"
+
+#: agency/models.py:42 agency/models.py:48 trans/parts/admin.py:12
+#: trans/parts/regform.py:11 webmaster/models.py:39 webmaster/models.py:45
+msgid "Email"
+msgstr "Электронной почты"
+
+#: agency/models.py:54 webmaster/models.py:51
+msgid "Other messangers"
+msgstr "Других послов"
+
+#: agency/models.py:55 webmaster/models.py:52
+msgid "Skype, telegram etc..."
+msgstr "Skype, телеграмма и т. д...."
+
+#: agency/models.py:61 trans/parts/autotrans.py:65 trans/parts/regform.py:29
+#: webmaster/models.py:58
+msgid "Country"
+msgstr "Страна"
+
+#: agency/models.py:66 trans/parts/admin.py:10 trans/parts/autotrans.py:66
+#: trans/parts/regform.py:9 webmaster/models.py:63
+msgid "City"
+msgstr "Город"
+
+#: agency/models.py:72 trans/parts/regform.py:32 webmaster/models.py:69
+msgid "Phone 1"
+msgstr "Телефон 1"
+
+#: agency/models.py:78 trans/parts/regform.py:33
+msgid "Phone 2"
+msgstr "Телефон 2"
+
+#: agency/models.py:83
+msgid "Term of work"
+msgstr "Срок работы"
+
+#: agency/models.py:95 moderation/models.py:11
+msgid "Agency"
+msgstr "Агентство"
+
+#: agency/models.py:96
+msgid "Agencies"
+msgstr "Агентств"
+
+#: agency/models.py:100
+msgid "Director"
+msgstr "Директор"
+
+#: agency/models.py:101
+msgid "Manager"
+msgstr "Менеджер"
+
+#: agency/models.py:117
+msgid "Phone"
+msgstr "Телефон"
+
+#: agency/models.py:134
+msgid "Agency file"
+msgstr "Агентства файла"
+
+#: agency/models.py:135
+msgid "Agency files"
+msgstr "Агентство файлы"
+
+#: agency/models.py:144
+msgid "Agency woman"
+msgstr "Агентство женщина"
+
+#: agency/models.py:145
+msgid "Agency women"
+msgstr "Агентство женщин"
+
+#: backend/settings.py:197 props/management/commands/utils.py:53
+#: trans/parts/admin.py:19 trans/parts/regform.py:18
+msgid "Russian"
+msgstr "Русский"
+
+#: backend/settings.py:198 props/management/commands/utils.py:48
+#: trans/parts/admin.py:20 trans/parts/regform.py:19
+msgid "English"
+msgstr "Английский"
+
+#: chat/admin.py:26
+msgid "Связанный объект"
+msgstr ""
+
+#: chat/models.py:18
+msgid "Is active?"
+msgstr "Является активным?"
+
+#: chat/models.py:19
+msgid "Is answered?"
+msgstr "Это ответил?"
+
+#: chat/models.py:20
+msgid "Is low account?"
+msgstr "Низкая учетная запись?"
+
+#: chat/models.py:21
+msgid "Is video?"
+msgstr "Это видео?"
+
+#: chat/models.py:136
+msgid "Chat room"
+msgstr "Чат"
+
+#: chat/models.py:137
+msgid "Chat rooms"
+msgstr "Чаты "
+
+#: chat/models.py:161
+msgid "message"
+msgstr "сообщение"
+
+#: chat/models.py:162
+msgid "video"
+msgstr "видео"
+
+#: chat/models.py:163
+msgid "image"
+msgstr "изображения"
+
+#: chat/models.py:164
+msgid "sticker"
+msgstr "наклейка"
+
+#: chat/models.py:165
+msgid "post"
+msgstr ""
+
+#: chat/models.py:168 logsys/models.py:15
+msgid "Type of message"
+msgstr "Тип сообщения"
+
+#: chat/models.py:208
+msgid "Text chat"
+msgstr "Текстовый чат"
+
+#: chat/models.py:209
+msgid "Man video"
+msgstr "Человек видео"
+
+#: chat/models.py:210
+msgid "Woman video"
+msgstr "Женщина видео"
+
+#: chat/models.py:213
+msgid "Type of session"
+msgstr "Типа сессии"
+
+#: feed/views.py:161
+msgid "You already subscribed!"
+msgstr "Вы уже подписаны!"
+
+#: feed/views.py:164
+msgid "You have been subscribed!"
+msgstr "Вы успешно подписаны!"
+
+#: feed/views.py:180
+#, fuzzy
+#| msgid "You have been subscribed!"
+msgid "You have been unsubscribed!"
+msgstr "Вы успешно подписаны!"
+
+#: feed/views.py:183
+msgid "Error!"
+msgstr ""
+
+#: feed/views.py:313
+#, fuzzy
+#| msgid "Object has been approved!"
+msgid "Message has been saved!"
+msgstr "Объект был одобрен!"
+
+#: likes/views.py:45
+#, python-brace-format
+msgid ""
+"user profile with id {user_profile.id} likes object {obj_model} with id "
+"{obj_id}"
+msgstr ""
+
+#: likes/views.py:48
+msgid "Error, duplicate record!"
+msgstr ""
+
+#: logsys/models.py:7 trans/parts/loginform.py:6
+msgid "Login"
+msgstr "Логин"
+
+#: logsys/models.py:8 trans/parts/admin.py:30
+msgid "Logout"
+msgstr "Выход"
+
+#: logsys/models.py:9
+msgid "detail_gallery"
+msgstr ""
+
+#: moderation/admin.py:60
+msgid "Approve"
+msgstr "Утвердить"
+
+#: moderation/admin.py:65
+msgid "Disapprove"
+msgstr "Неодобряю"
+
+#: moderation/admin.py:70
+msgid "Модерируемый объект"
+msgstr ""
+
+#: moderation/admin.py:75
+msgid "Object has been approved!"
+msgstr "Объект был одобрен!"
+
+#: moderation/admin.py:80
+msgid "Object has been disapproved!"
+msgstr "Объект был отклонен!"
+
+#: moderation/models.py:9
+msgid "Woman profile"
+msgstr "Женщина профиль"
+
+#: moderation/models.py:10
+msgid "Man profile"
+msgstr "Человек профиль"
+
+#: moderation/models.py:12
+msgid "New photo"
+msgstr "Новые фото"
+
+#: moderation/models.py:13
+msgid "Delete photo"
+msgstr "Удалить фото"
+
+#: moderation/models.py:14 moderation/models.py:16
+msgid "New video"
+msgstr "Новое видео"
+
+#: moderation/models.py:15 moderation/models.py:17
+msgid "Delete video"
+msgstr "Удалить видео"
+
+#: moderation/models.py:18 usermedia/models.py:18
+msgid "Video"
+msgstr "Видео"
+
+#: moderation/models.py:19
+msgid "Verification documents"
+msgstr ""
+
+#: moderation/models.py:23
+msgid "Object type"
+msgstr "Тип объекта "
+
+#: moderation/models.py:34
+msgid "New or not?"
+msgstr "Новый или нет?"
+
+#: page/models.py:6
+msgid "Title"
+msgstr ""
+
+#: page/models.py:8 settings/models.py:9 settings/models.py:10
+msgid "Content"
+msgstr "Содержание"
+
+#: payment/models.py:14 payment/models.py:15 props/models.py:18
+#: props/models.py:19
+msgid "Alias"
+msgstr "Псевдоним"
+
+#: payment/models.py:21
+msgid "User"
+msgstr "Пользователь"
+
+#: payment/models.py:25
+msgid "Procent for agency"
+msgstr ""
+
+#: payment/models.py:49
+msgid "Price"
+msgstr ""
+
+#: payment/models.py:118
+msgid "User payment"
+msgstr "Оплата пользователей "
+
+#: payment/models.py:119
+msgid "User payments"
+msgstr "Платежи пользователей "
+
+#: payment/models.py:129 payment/models.py:130
+msgid "Agency to woman and payment types"
+msgstr ""
+
+#: props/management/commands/utils.py:8
+msgid "Eyes color"
+msgstr "Цвет глаз"
+
+#: props/management/commands/utils.py:13
+msgid "Blue"
+msgstr "Синий"
+
+#: props/management/commands/utils.py:18
+msgid "Brown"
+msgstr "Коричневый"
+
+#: props/management/commands/utils.py:25
+msgid "Heir color"
+msgstr "Цвет наследником "
+
+#: props/management/commands/utils.py:30
+msgid "Dark"
+msgstr "Темный"
+
+#: props/management/commands/utils.py:35
+msgid "Blonde"
+msgstr "Блондинка"
+
+#: props/models.py:8
+msgid "one"
+msgstr "один"
+
+#: props/models.py:9
+msgid "many"
+msgstr "многие"
+
+#: props/models.py:22
+msgid "Type"
+msgstr "Тип"
+
+#: props/models.py:28 props/models.py:29
+msgid "Show in the man form"
+msgstr "Показать в виде человека "
+
+#: props/models.py:33 props/models.py:34
+msgid "Show in the woman form"
+msgstr "Показать в женщине форма"
+
+#: props/models.py:47
+msgid "User property"
+msgstr "Свойства пользователя "
+
+#: props/models.py:48
+msgid "User properties"
+msgstr "Свойства пользователя "
+
+#: props/models.py:61
+msgid "User property value"
+msgstr "Значение свойства пользователя "
+
+#: props/models.py:62
+msgid "User property values"
+msgstr "Значения свойств пользователей "
+
+#: settings/models.py:41
+msgid "US"
+msgstr ""
+
+#: settings/models.py:42
+msgid "EUR"
+msgstr ""
+
+#: settings/models.py:45
+#, fuzzy
+#| msgid "Agency"
+msgid "Curency"
+msgstr "Агентство"
+
+#: shop/models.py:10
+msgid "Category"
+msgstr "Категория"
+
+#: shop/models.py:11
+msgid "Categories"
+msgstr "Категории"
+
+#: shop/models.py:25
+msgid "Product"
+msgstr "Продукт"
+
+#: shop/models.py:26
+msgid "Products"
+msgstr "Продукты"
+
+#: trans/parts/admin.py:5 trans/parts/regform.py:4
+msgid "Birthday"
+msgstr "День рождения"
+
+#: trans/parts/admin.py:7 trans/parts/regform.py:6
+msgid "Looking for"
+msgstr "Ищу"
+
+#: trans/parts/admin.py:8 trans/parts/regform.py:7
+msgid "Job"
+msgstr "Работа"
+
+#: trans/parts/admin.py:9 trans/parts/regform.py:8
+msgid "Goal"
+msgstr "Цель"
+
+#: trans/parts/admin.py:11 trans/parts/regform.py:10
+msgid "Submit"
+msgstr "Представить"
+
+#: trans/parts/admin.py:13 trans/parts/regform.py:12
+msgid "Enter your real name"
+msgstr "Введите свое настоящее имя"
+
+#: trans/parts/admin.py:14 trans/parts/regform.py:13
+msgid "Something about you plz."
+msgstr "Что-то о вас, плз."
+
+#: trans/parts/admin.py:15 trans/parts/regform.py:14
+msgid "What is your ideal partner?"
+msgstr "Каков ваш идеальный партнер?"
+
+#: trans/parts/admin.py:16 trans/parts/regform.py:15
+msgid "What do you do for your living?"
+msgstr "Что вы делаете для жизни?"
+
+#: trans/parts/admin.py:17 trans/parts/regform.py:16
+msgid "What is your altimate goal of your life :)?"
+msgstr "Какова ваша цель altimateбыл вашей жизни :)?"
+
+#: trans/parts/admin.py:18 trans/parts/regform.py:17
+msgid "City you are living in?"
+msgstr "Города ты живешь?"
+
+#: trans/parts/admin.py:21 trans/parts/regform.py:20
+msgid "Enter you email"
+msgstr "Введите Ваш адрес электронной почты"
+
+#: trans/parts/admin.py:22 trans/parts/loginform.py:3
+msgid "Dating Club"
+msgstr "Клуб Знакомств "
+
+#: trans/parts/admin.py:23
+msgid "Chat"
+msgstr "Чат"
+
+#: trans/parts/admin.py:24 trans/parts/photo.py:3
+msgid "My photo"
+msgstr "Мое фото"
+
+#: trans/parts/admin.py:25 trans/parts/chat.py:5
+msgid "My video"
+msgstr "Мое видео"
+
+#: trans/parts/admin.py:26
+msgid "Mailbox"
+msgstr "Почтовый ящик"
+
+#: trans/parts/admin.py:27
+msgid "Add credits"
+msgstr "Добавить кредиты"
+
+#: trans/parts/admin.py:28
+msgid "Amount"
+msgstr "Сумма"
+
+#: trans/parts/admin.py:29
+msgid "Add"
+msgstr "Добавить"
+
+#: trans/parts/admin.py:31
+msgid "User online"
+msgstr "Пользователей онлайн"
+
+#: trans/parts/admin.py:32
+msgid "Gallery"
+msgstr "Галерея"
+
+#: trans/parts/admin.py:33
+msgid "My contacts"
+msgstr "Мои контакты"
+
+#: trans/parts/admin.py:34
+msgid "Add photo"
+msgstr "Добавить фото"
+
+#: trans/parts/admin.py:35
+msgid "Select file"
+msgstr "Выберите файл"
+
+#: trans/parts/admin.py:36
+msgid "Set main"
+msgstr "Набор основных"
+
+#: trans/parts/admin.py:37
+msgid "Delete"
+msgstr "Удалить"
+
+#: trans/parts/admin.py:38
+msgid "Edit"
+msgstr "Редактировать"
+
+#: trans/parts/admin.py:39
+msgid "Is main"
+msgstr "Главная"
+
+#: trans/parts/admin.py:40
+msgid "Status"
+msgstr "Статус"
+
+#: trans/parts/admin.py:41
+msgid "Deleted"
+msgstr "Удален"
+
+#: trans/parts/admin.py:42
+msgid "Turn video"
+msgstr "Повернуть видео"
+
+#: trans/parts/admin.py:43
+msgid "Take picture"
+msgstr "Сфотографировать"
+
+#: trans/parts/admin.py:44
+msgid "Stop video"
+msgstr "Стоп видео"
+
+#: trans/parts/autotrans.py:5
+#, fuzzy
+msgid "TAKE_VIDEO_CAM"
+msgstr "Взять видео с камеры"
+
+#: trans/parts/autotrans.py:6
+msgid "BUTTON_START_REC"
+msgstr ""
+
+#: trans/parts/autotrans.py:7
+msgid "BUTTON_STOP_REC"
+msgstr ""
+
+#: trans/parts/autotrans.py:8
+#, fuzzy
+msgid "TAKEPIC_TEXT"
+msgstr "Сфотографировать с камеры"
+
+#: trans/parts/autotrans.py:9
+msgid "BUTTON_TAKEPIC"
+msgstr ""
+
+#: trans/parts/autotrans.py:10
+msgid "EDIT_PROFILE"
+msgstr ""
+
+#: trans/parts/autotrans.py:11
+msgid "TITLE_EMAIL"
+msgstr "Email"
+
+#: trans/parts/autotrans.py:12
+msgid "TITLE_NAME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:13
+msgid "HELP_NAME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:14
+msgid "ERROR_NAME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:15
+msgid "TITLE_NAME_BOSS"
+msgstr "Руководитель"
+
+#: trans/parts/autotrans.py:16
+msgid "HELP_NAME_BOSS"
+msgstr "Имя руководителя"
+
+#: trans/parts/autotrans.py:17
+msgid "ERROR_NAME_BOSS"
+msgstr "Ошибка имени руководителя"
+
+#: trans/parts/autotrans.py:18
+msgid "TITLE_LOGIN"
+msgstr "Логин"
+
+#: trans/parts/autotrans.py:19
+#, fuzzy
+#| msgid "TITLE_LOGIN"
+msgid "HELP_LOGIN"
+msgstr "Логин"
+
+#: trans/parts/autotrans.py:20
+#, fuzzy
+#| msgid "ERROR_NAME"
+msgid "ERROR_LOGIN"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:21
+#, fuzzy
+#| msgid "TITLE_NAME_BOSS"
+msgid "TITLE_PASSWORD"
+msgstr "Руководитель"
+
+#: trans/parts/autotrans.py:22
+msgid "HELP_PASSWORD"
+msgstr ""
+
+#: trans/parts/autotrans.py:23
+#, fuzzy
+#| msgid "ERROR_NAME_BOSS"
+msgid "ERROR_PASSWORD"
+msgstr "Ошибка имени руководителя"
+
+#: trans/parts/autotrans.py:24
+#, fuzzy
+#| msgid "TITLE_NAME_BOSS"
+msgid "TITLE_ADDRESS"
+msgstr "Руководитель"
+
+#: trans/parts/autotrans.py:25
+#, fuzzy
+#| msgid "HELP_NAME_BOSS"
+msgid "HELP_ADDRESS"
+msgstr "Имя руководителя"
+
+#: trans/parts/autotrans.py:26
+#, fuzzy
+#| msgid "ERROR_NAME_BOSS"
+msgid "ERROR_ADDRESS"
+msgstr "Ошибка имени руководителя"
+
+#: trans/parts/autotrans.py:27
+#, fuzzy
+#| msgid "TITLE_EMAIL"
+msgid "TITLE_CITY"
+msgstr "Email"
+
+#: trans/parts/autotrans.py:28
+msgid "HELP_CITY"
+msgstr ""
+
+#: trans/parts/autotrans.py:29
+#, fuzzy
+#| msgid "ERROR_NAME"
+msgid "ERROR_CITY"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:30
+#, fuzzy
+#| msgid "TITLE_LOGIN"
+msgid "TITLE_COUNTRY"
+msgstr "Логин"
+
+#: trans/parts/autotrans.py:31
+msgid "HELP_COUNTRY"
+msgstr ""
+
+#: trans/parts/autotrans.py:32
+#, fuzzy
+#| msgid "ERROR_NAME"
+msgid "ERROR_COUNTRY"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:33
+#, fuzzy
+#| msgid "TITLE_NAME"
+msgid "TITLE_SKYPE"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:34
+#, fuzzy
+#| msgid "HELP_NAME"
+msgid "HELP_SKYPE"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:35
+#, fuzzy
+#| msgid "TITLE_NAME"
+msgid "TITLE_PHONE1"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:36
+#, fuzzy
+#| msgid "HELP_NAME"
+msgid "HELP_PHONE1"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:37
+#, fuzzy
+#| msgid "TITLE_NAME"
+msgid "TITLE_PHONE2"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:38
+#, fuzzy
+#| msgid "HELP_NAME"
+msgid "HELP_PHONE2"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:39
+msgid "TITLE_COUNT_WOMAN"
+msgstr ""
+
+#: trans/parts/autotrans.py:40
+msgid "HELP_COUNT_WOMAN"
+msgstr ""
+
+#: trans/parts/autotrans.py:41
+#, fuzzy
+#| msgid "TITLE_NAME"
+msgid "TITLE_WORKING_TIME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:42
+#, fuzzy
+#| msgid "HELP_NAME"
+msgid "HELP_WORKING_TIME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:43
+msgid "BUTTON_ADD_IMAGE"
+msgstr ""
+
+#: trans/parts/autotrans.py:44
+msgid "BUTTON_DELETE_IMAGE"
+msgstr ""
+
+#: trans/parts/autotrans.py:45
+#, fuzzy
+#| msgid "TITLE_AGE_TO"
+msgid "TITLE_DATEBIRTH"
+msgstr "Возраст до"
+
+#: trans/parts/autotrans.py:46
+#, fuzzy
+#| msgid "TITLE_NAME"
+msgid "TITLE_ABOUT_ME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:47
+#, fuzzy
+#| msgid "HELP_NAME"
+msgid "HELP_ABOUT_ME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:48
+msgid "ERROR_ABOUT_ME_REQUIRED"
+msgstr ""
+
+#: trans/parts/autotrans.py:49
+#, fuzzy
+#| msgid "TITLE_LOGIN"
+msgid "TITLE_LOOKINGFOR"
+msgstr "Логин"
+
+#: trans/parts/autotrans.py:50
+msgid "HELP_LOOKINGFOR"
+msgstr ""
+
+#: trans/parts/autotrans.py:51
+msgid "ERROR_LOOKINGFOR"
+msgstr ""
+
+#: trans/parts/autotrans.py:52
+#, fuzzy
+#| msgid "TITLE_LOGIN"
+msgid "TITLE_JOB"
+msgstr "Логин"
+
+#: trans/parts/autotrans.py:53
+msgid "HELP_JOB"
+msgstr ""
+
+#: trans/parts/autotrans.py:54
+#, fuzzy
+#| msgid "ERROR_NAME"
+msgid "ERROR_JOB"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:55
+#, fuzzy
+#| msgid "TITLE_EMAIL"
+msgid "TITLE_GOAL"
+msgstr "Email"
+
+#: trans/parts/autotrans.py:56
+#, fuzzy
+#| msgid "HELP_NAME"
+msgid "HELP_GOAL"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:57
+#, fuzzy
+#| msgid "ERROR_NAME"
+msgid "ERROR_GOAL"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:58
+#, fuzzy
+#| msgid "BTN_ICHOSE"
+msgid "BTN_SAVE"
+msgstr "Интелектуальный выбор"
+
+#: trans/parts/autotrans.py:59
+msgid "CHANGE_PASSWORD"
+msgstr ""
+
+#: trans/parts/autotrans.py:60
+#, fuzzy
+#| msgid "TITLE_EMAIL"
+msgid "TITLE_TITLE"
+msgstr "Email"
+
+#: trans/parts/autotrans.py:61
+#, fuzzy
+#| msgid "TITLE_AGE_TO"
+msgid "TITLE_DESCRIPTION"
+msgstr "Возраст до"
+
+#: trans/parts/autotrans.py:62
+#, fuzzy
+#| msgid "BTN_ICHOSE"
+msgid "BTN_CANCEL"
+msgstr "Интелектуальный выбор"
+
+#: trans/parts/autotrans.py:63
+msgid "MSG_NO_FAVORITES"
+msgstr "Нет фаворитов."
+
+#: trans/parts/autotrans.py:64
+msgid "MSG_NO_SUBSCRIPTIONS"
+msgstr "Нет подписок."
+
+#: trans/parts/autotrans.py:67
+#, fuzzy
+#| msgid "Eyes color"
+msgid "Eye color"
+msgstr "Цвет глаз"
+
+#: trans/parts/autotrans.py:68
+#, fuzzy
+#| msgid "Heir color"
+msgid "Hair color"
+msgstr "Цвет наследником "
+
+#: trans/parts/autotrans.py:69
+msgid "Nationality"
+msgstr ""
+
+#: trans/parts/autotrans.py:70
+#, fuzzy
+#| msgid "Language"
+msgid "Languages"
+msgstr "Язык"
+
+#: trans/parts/autotrans.py:71
+msgid "Hobby"
+msgstr ""
+
+#: trans/parts/autotrans.py:72
+msgid "TITLE_AGE_FROM"
+msgstr "Возраст от"
+
+#: trans/parts/autotrans.py:73
+msgid "MSG_ALL"
+msgstr "Все"
+
+#: trans/parts/autotrans.py:74
+msgid "TITLE_AGE_TO"
+msgstr "Возраст до"
+
+#: trans/parts/autotrans.py:75
+msgid "TITLE_IS_ONLINE"
+msgstr "Онлайн"
+
+#: trans/parts/autotrans.py:76
+msgid "TITLE_CHAT_TURNON_VIDEO"
+msgstr ""
+
+#: trans/parts/autotrans.py:77
+msgid "TITLE_CHAT_TURNOFF_VIDEO"
+msgstr ""
+
+#: trans/parts/autotrans.py:78
+msgid "BUTTON_HIDE_CAMERA"
+msgstr ""
+
+#: trans/parts/autotrans.py:79
+msgid "BUTTON_SHOW_CAMERA"
+msgstr ""
+
+#: trans/parts/autotrans.py:80
+msgid "TAB_ALLGIRLS"
+msgstr ""
+
+#: trans/parts/autotrans.py:81
+#, fuzzy
+#| msgid "TITLE_IS_ONLINE"
+msgid "TAB_ONLINE"
+msgstr "Онлайн"
+
+#: trans/parts/autotrans.py:82
+msgid "TAB_FAVS"
+msgstr ""
+
+#: trans/parts/autotrans.py:83
+#, fuzzy
+#| msgid "TITLE_NAME"
+msgid "TITLE_CHAT_NAME"
+msgstr "Имя"
+
+#: trans/parts/autotrans.py:84
+msgid "BUTTON_ADD_PIC_FROM_COMP"
+msgstr ""
+
+#: trans/parts/autotrans.py:85
+msgid "BUTTON_ADD_FROM_CAM"
+msgstr ""
+
+#: trans/parts/autotrans.py:86
+msgid "BUTTON_ADD_VIDEO_FROM_COMP"
+msgstr ""
+
+#: trans/parts/autotrans.py:87
+msgid "CONTENT_LOCK_TITLE"
+msgstr ""
+
+#: trans/parts/autotrans.py:88
+msgid "CONTENT_LOCK_TEXT"
+msgstr ""
+
+#: trans/parts/autotrans.py:89
+msgid "CONTENT_LOCK_BTN"
+msgstr ""
+
+#: trans/parts/autotrans.py:90
+msgid "BUTTON_ADD_FEED"
+msgstr ""
+
+#: trans/parts/autotrans.py:91
+msgid "BUTTON_REPLANISH"
+msgstr ""
+
+#: trans/parts/autotrans.py:92
+#, fuzzy
+#| msgid "TITLE_EMAIL"
+msgid "TITLE_WREGISTRATION"
+msgstr "Email"
+
+#: trans/parts/autotrans.py:93
+msgid "CREATE_AGENCY_ACCOUNT"
+msgstr ""
+
+#: trans/parts/autotrans.py:94
+msgid "WOMAN"
+msgstr ""
+
+#: trans/parts/autotrans.py:95
+msgid "CREATE_MAN_ACCOUNT"
+msgstr ""
+
+#: trans/parts/autotrans.py:96
+msgid "EMAIL_IS_REQUIRED"
+msgstr ""
+
+#: trans/parts/autotrans.py:97
+msgid "CREATE_ACCOUNT"
+msgstr ""
+
+#: trans/parts/autotrans.py:98
+msgid "BTN_LOGIN"
+msgstr "Вход"
+
+#: trans/parts/autotrans.py:99
+msgid "ALREADY_HAVE_ACCOUNT"
+msgstr ""
+
+#: trans/parts/autotrans.py:100
+msgid "TITLE_PHOTO_VIDEO"
+msgstr ""
+
+#: trans/parts/autotrans.py:101
+msgid "HLP_PHOTOVIDEO1"
+msgstr ""
+
+#: trans/parts/autotrans.py:102
+msgid "LBL_FROMPC"
+msgstr ""
+
+#: trans/parts/autotrans.py:103
+msgid "LBL_FROMCAM"
+msgstr ""
+
+#: trans/parts/autotrans.py:104
+msgid "HLP_PHOTOVIDEO2"
+msgstr ""
+
+#: trans/parts/autotrans.py:105
+msgid "BTN_TAKEPIC"
+msgstr ""
+
+#: trans/parts/autotrans.py:106
+msgid "BTN_TAKEPICCAM"
+msgstr ""
+
+#: trans/parts/autotrans.py:107
+msgid "BTN_BACK"
+msgstr ""
+
+#: trans/parts/autotrans.py:108
+msgid "CREATE_FREE_ACCOUNT"
+msgstr ""
+
+#: trans/parts/autotrans.py:109
+msgid "UKR_BRIDES_LOOK"
+msgstr ""
+
+#: trans/parts/autotrans.py:110
+msgid "MAN"
+msgstr ""
+
+#: trans/parts/autotrans.py:111
+msgid "YOU_HAVE_ACCOUNT"
+msgstr ""
+
+#: trans/parts/autotrans.py:112
+msgid "FURTHER"
+msgstr ""
+
+#: trans/parts/autotrans.py:113
+msgid "STEP"
+msgstr ""
+
+#: trans/parts/autotrans.py:114
+msgid "ERROR_PLZ_ENTER_EMAIL"
+msgstr ""
+
+#: trans/parts/autotrans.py:115
+msgid "CHECKING"
+msgstr ""
+
+#: trans/parts/autotrans.py:116
+msgid "EMAIL_IS_AVALIABLE"
+msgstr ""
+
+#: trans/parts/autotrans.py:117
+msgid "LOGIN_ERROR"
+msgstr ""
+
+#: trans/parts/autotrans.py:118
+#, fuzzy
+#| msgid "BTN_LOGIN"
+msgid "LOGIN"
+msgstr "Вход"
+
+#: trans/parts/autotrans.py:119
+msgid "LOGIN_AS"
+msgstr ""
+
+#: trans/parts/autotrans.py:120
+msgid "BTN_ICHOSE"
+msgstr "Интелектуальный выбор"
+
+#: trans/parts/autotrans.py:121
+msgid "BTN_FOR_FREE"
+msgstr "Бесплатно"
+
+#: trans/parts/autotrans.py:122
+msgid "BTN_SIGN_UP"
+msgstr "Регистрация"
+
+#: trans/parts/chat.py:3
+msgid "Current room"
+msgstr ""
+
+#: trans/parts/chat.py:4
+msgid "Abonent video"
+msgstr ""
+
+#: trans/parts/chat.py:6
+msgid "Turn my video on"
+msgstr ""
+
+#: trans/parts/chat.py:7
+msgid "Messages"
+msgstr ""
+
+#: trans/parts/chat.py:8
+msgid "Send message"
+msgstr ""
+
+#: trans/parts/chat.py:9
+msgid "Resume"
+msgstr ""
+
+#: trans/parts/chat.py:10
+msgid "Sorry but you can not send message. No credits."
+msgstr ""
+
+#: trans/parts/loginform.py:4
+msgid "Sign In"
+msgstr ""
+
+#: trans/parts/loginform.py:7
+msgid "Man registration"
+msgstr ""
+
+#: trans/parts/loginform.py:8
+msgid "Woman registration"
+msgstr ""
+
+#: trans/parts/nav.py:5
+msgid "Users"
+msgstr ""
+
+#: trans/parts/nav.py:6 usermedia/models.py:17
+msgid "Photo"
+msgstr "Фото"
+
+#: trans/parts/nav.py:7 trans/parts/nav.py:8 trans/parts/nav.py:9
+#: trans/parts/nav.py:10 trans/parts/nav.py:11 trans/parts/photo.py:4
+#: trans/parts/photo.py:5 trans/parts/photo.py:6 trans/parts/photo.py:7
+#: trans/parts/photo.py:8 trans/parts/regform.py:42 trans/parts/regform.py:43
+#: trans/parts/regform.py:44 trans/parts/regform.py:45
+#: trans/parts/regform.py:46 trans/parts/regform.py:47
+#: trans/parts/regform.py:48 trans/parts/regform.py:49
+msgid "_"
+msgstr ""
+
+#: trans/parts/regform.py:22
+msgid "Agency registration"
+msgstr ""
+
+#: trans/parts/regform.py:23
+msgid "Director`s name"
+msgstr ""
+
+#: trans/parts/regform.py:24
+msgid "Name and surname."
+msgstr ""
+
+#: trans/parts/regform.py:25
+msgid "Enter agency login plz."
+msgstr ""
+
+#: trans/parts/regform.py:26
+msgid "Password for the agency must be strong!"
+msgstr ""
+
+#: trans/parts/regform.py:27
+msgid "Agency localization."
+msgstr ""
+
+#: trans/parts/regform.py:28
+msgid "Where the agency is?"
+msgstr ""
+
+#: trans/parts/regform.py:30
+msgid "Skype"
+msgstr ""
+
+#: trans/parts/regform.py:31
+msgid "Skype login"
+msgstr ""
+
+#: trans/parts/regform.py:34
+msgid "Help text for phone 1"
+msgstr ""
+
+#: trans/parts/regform.py:35
+msgid "Help text for phone 2"
+msgstr ""
+
+#: trans/parts/regform.py:36
+msgid "How many woman?"
+msgstr ""
+
+#: trans/parts/regform.py:37
+msgid "How much time do you work?"
+msgstr ""
+
+#: trans/parts/regform.py:38
+msgid "Add image"
+msgstr ""
+
+#: trans/parts/regform.py:39
+msgid "Scan of ID"
+msgstr ""
+
+#: trans/parts/regform.py:40
+msgid "Delete image"
+msgstr ""
+
+#: trans/parts/regform.py:41
+msgid "Register the agency"
+msgstr ""
+
+#: usermedia/models.py:22
+msgid "Landscape"
+msgstr "Пейзаж"
+
+#: usermedia/models.py:23
+msgid "Portrait"
+msgstr "Портрет"
+
+#: usermedia/models.py:27
+msgid "Public"
+msgstr ""
+
+#: usermedia/models.py:28
+msgid "Private"
+msgstr ""
+
+#: usermedia/models.py:29
+msgid "Buffer"
+msgstr ""
+
+#: usermedia/models.py:33
+msgid "Type of media"
+msgstr "Тип носителя"
+
+#: usermedia/models.py:39
+msgid "Role of media"
+msgstr ""
+
+#: usermedia/models.py:45
+msgid "Orientation"
+msgstr "Ориентация"
+
+#: usermedia/views/media.py:22
+msgid "Photo was changed."
+msgstr ""
+
+#: usermedia/views/media.py:58
+msgid "No money!"
+msgstr ""
+
+#: usermedia/views/media.py:65
+msgid "Good."
+msgstr ""
+
+#: usermedia/views/photo.py:46
+msgid "Photo saved!"
+msgstr ""
+
+#: usermedia/views/video.py:40
+msgid "Error on server!"
+msgstr ""
+
+#: webmaster/models.py:78
+msgid "Webmaster"
+msgstr ""
+
+#: webmaster/models.py:79
+msgid "Webmasters"
+msgstr ""
+
+#~ msgid "BTN_REQUEST_PASS_RESET"
+#~ msgstr "Сбросить пароль"
+
+#~ msgid "BTN_PASS_RESET"
+#~ msgstr "Сброс пароля"
+
+#~ msgid "BTN_FORGET_PASS"
+#~ msgstr "Забыли пароль."
+
+#~ msgid "BTN_SIGNIN_WITH_GOOGLE"
+#~ msgstr "Войти через гугл."
+
+#~ msgid "BTN_INTELEGENT_CHOSE"
+#~ msgstr "Интелектуальный выбор"

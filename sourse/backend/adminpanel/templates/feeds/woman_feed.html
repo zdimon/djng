@@ -1,0 +1,108 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+{% block content %}
+    <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            NEUROLDATING.COM
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-dashboard"></i> <span id="nikita">Посты Женщин на модерацию</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                <!--All Feed -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                               Посты Женщин
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                       <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Аватар</th>
+                                        <th class="text-center">Пользователь</th>
+                                        <th class="text-center">Пост/Сторис</th>
+                                        <th class="text-center">Статус</th>
+                                        <th class="text-center">Кол-во вложенных файлов</th>
+                                        <th class="text-center">Опубликовать</th>
+                                        <th class="text-center">Отложить</th>
+                                        <th>Дата создания</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="supers_list">
+                                {% for post in feed_women %}
+                                    <tr>
+{#                                        <td>{{ forloop.counter }}</td>#}
+                                        <td class="text-center"><img src="{{ post.user.main_photo }}" width="80px;" height="80px;"></td>
+                                        <td class="text-center"><a href="{% url 'viewusrprofile' post.user.id %}">{{ post.user.username }}</a></td>
+                                        <td class="text-center">
+                                           {% if post.is_stories  %}
+                                               <a href="{% url 'viewfeed' post.id %}">Сторис</a>
+                                           {% else %}
+                                               <a href="{% url 'viewfeed' post.id %}">Пост</a>
+                                            {% endif %}
+                                        </td>
+                                        <td class="text-center">
+                                            {% if post.is_approved %}
+                                               Одобрено
+                                            {% else %}
+                                                Не одобрено
+                                            {% endif %}
+                                        </td>
+                                        <td class="text-center">{{ post.feedmedia.count }}</td>
+                                        <td class="text-center"><a type="button"
+                                                                   class="btn btn-sm btn-success"
+                                                                   href="{% url 'approvedfeed' post.id 'woman' %}">Опубликовать</a>
+                                        </td>
+                                        <td class="text-center"><a type="button" data_delete="delete"
+                                                                   id="{{ post.id }}"
+                                                                   class="btn btn-sm btn-danger"
+                                                                   href="#">Отложить</a>
+                                        </td>
+                                        <td class="text-center">{{ post.created_at|date:"D d M Y" }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                <!--All feed end -->
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+    <!--Pagination-->
+    {% if is_paginated %}
+    <ul class="pagination">
+    {% if page_obj.has_previous %}
+      <li><a href="/adminpanel/feed/getwoman/page/{{ page_obj.previous_page_number }}/">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in paginator.page_range %}
+      {% if page_obj.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="/adminpanel/feed/getwoman/page/{{ i }}/">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if page_obj.has_next %}
+      <li><a href="/adminpanel/feed/getwoman/page/{{ page_obj.next_page_number }}/">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+    </ul>
+{% endif %}
+{% endblock %}

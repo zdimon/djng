@@ -1,0 +1,35 @@
+{
+    "title": "Moderation",
+    "root": "admin",
+    "dirname": "moderation",
+    "fileprefix": "moderation",
+    "camelName": "moderation",
+    "upname": "Moderation",
+    "url_list": "moderation/admin/",
+    "url_create": "moderation/admin/",
+    "url_update": "moderation/admin/",
+    "url_delete": "moderation/admin/",
+    "url_delete_bulk": "moderation/admin/",
+    "rout": "moderation",
+    "new_button": false,
+    "list_fields": [
+        {"name": "id", "type": "number", "title": "ID"},
+        {"name": "moderator", "type": "custom", "title": "Moderation", "selector": "moderator-list-cmp"},
+        {"name": "name", "type": "string", "title": "Ammount"},
+        {"name": "type_obj", "type": "string", "title": "Type"}
+    ],
+    "filter_fields": [
+        {"name": "type_obj", "type": "options", "items": [
+                {"name": "Woman profile", "value": "woman-profile"},
+                {"name": "Man profile", "value": "man-profile"},
+                {"name": "Agency", "value": "agency"},
+                {"name": "New photo", "value": "photo-new"},
+                {"name": "Delete photo", "value": "photo-delete"},
+                {"name": "New video", "value": "video-new"},
+                {"name": "New feed", "value": "feed-new"},
+                {"name": "Delete feed", "value": "feed-delete"},
+                {"name": "Verification documents", "value": "verify-doc"}
+            ]
+        }
+    ]
+}

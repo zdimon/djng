@@ -1,0 +1,147 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+{% block content %}
+    <div class="btn-modal-wrap btn-modal-wrap-1">
+    <!-- Modal Deleted -->
+    <div class="modal fade" id="is_deleted_staff" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times" aria-hidden="true">
+                    </span></button>
+                    <h4 class="modal-title" id="myModalLabel" style="color: #ff0012">Внимание!!!Удаление Персонала!!!</h4>
+                </div>
+                 <div class="modal-body">
+                     <h3 style="color: #ff0012">ВЫ действительно хотите удалить этого пользователя???</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-xs btn-default" id="cancel_type">Cancel</button>
+                    <button type="button" class="btn btn-xs btn-danger" id="delete_type" data_id_type="">Deleted</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            NEUROLDATING.COM - Участники персонала
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-dashboard"></i> <span id="nikita">Участники персонала</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="form-group">
+{#                            <label>Добавить</label>#}
+                            <a type="button"  class="btn btn-sm btn-success form-controlr"
+                               href="{% url 'addform' %}">Добавить персонал</a>
+                         </div>
+                    </div>
+
+                <!--Super Satff Start -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                               Супер пользователи
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                       <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">№</th>
+                                        <th class="text-center">Имя</th>
+                                        <th class="text-center">Группа</th>
+                                        <th class="text-center">Редактировать</th>
+                                        <th class="text-center">Удалить</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="supers_list">
+                                {% for super in users.supers %}
+                                    <tr>
+                                        <td>{{ forloop.counter }}</td>
+                                        <td class="text-center">{{ super.username }}</td>
+                                        <td class="text-center">
+                                            {% for group in super.groups.all %}
+                                                {{ group }},
+                                            {% endfor %}
+                                        </td>
+                                        <td class="text-center"><a type="button" class="btn btn-sm btn-success"
+                                                                   href="{% url 'editstaff' super.id %}">Редактировать</a>
+                                        </td>
+                                        <td class="text-center"><a type="button" data_delete="delete"
+                                                                   id="{{ super.id }}"
+                                                                   class="btn btn-sm btn-danger"
+                                                                   href="{% url 'staffdelete' super.id %}">Delete</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                <!--Super Staff end -->
+                <!--Staff Start -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                               Персонал
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                       <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">№</th>
+                                        <th class="text-center">Имя</th>
+                                        <th class="text-center">Группа</th>
+                                        <th class="text-center">Редактировать</th>
+                                        <th class="text-center">Удалить</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="staffs_list">
+                                {% for staff in users.staffs %}
+                                    <tr>
+                                        <td>{{ forloop.counter }}</td>
+                                        <td class="text-center">{{ staff.username }}</td>
+                                        <td class="text-center">
+                                            {% for group in staff.groups.all %}
+                                                {{ group }},
+                                            {% endfor %}
+                                        </td>
+                                        <td class="text-center"><a type="button" class="btn btn-sm btn-success"
+                                                                   href="{% url 'editstaff' staff.id %}">Редактировать</a>
+                                        </td>
+                                        <td class="text-center"><a type="button" data_delete="delete"
+                                                                   id="{{ staff.id }}"
+                                                                   class="btn btn-sm btn-danger"
+                                                                   href="{% url 'staffdelete' staff.id %}">Delete</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                <!--Staff end -->
+
+
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+<script type="text/javascript" src="{% static 'js/staffwork.js' %}"></script>
+{% endblock %}
