@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
-from django.contrib.auth.models import User
-
+from django.contrib.auth.models import User, Group
+import random
 class Command(BaseCommand):
     'Import test users into DB'
     help = 'Import test users into DB'
@@ -17,6 +17,12 @@ class Command(BaseCommand):
             user = User()
             user.set_password('user%s' % i)
             user.username = 'user%s' % i
+            user.email = 'user%s@gmail.com' % i
             user.is_active = True
             user.is_superuser = True
             user.save()            
+            g = Group()
+            g.name = 'group-%s' % user.username
+            g.save()
+            g.user_set.add(user)
+

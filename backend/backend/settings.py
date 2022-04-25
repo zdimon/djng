@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_framework_swagger',
     'corsheaders',
-    'oauth2_provider',
     'autogen',
     'account'
 ]
@@ -73,14 +73,14 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'grappelli_extras.context_processors.extra_menus',
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
                 'django.template.context_processors.media'
             ],
             'builtins': [
                 'autogen.templatetags.ng_filter'
-            ]
+            ],
+            'libraries' : {
+                    'staticfiles': 'django.templatetags.static', 
+            }
         },
     },
 ]

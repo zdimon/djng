@@ -45,10 +45,10 @@ import { UserComponent } from './user.component';
 /// Tabs
 
 
-import { UserMediaTabListComponent } from './tabs/list/user-media-list.component';
-import { UserMediaEffects } from './../store/_effects/user-media-list.tab.effects';
-import { UserMediaReducer } from './../store/_reducers/user-media-list.tab.reducers';
-import { UserMediaService } from './../store/_services/user-media-list.tab.services';
+import { UserGroupTabListComponent } from './tabs/list/user-group-list.component';
+import { UserGroupEffects } from './../store/_effects/user-group-list.tab.effects';
+import { UserGroupReducer } from './../store/_reducers/user-group-list.tab.reducers';
+import { UserGroupService } from './../store/_services/user-group-list.tab.services';
 
 
 // Date format issue
@@ -166,8 +166,8 @@ const routes: Routes = [
         StoreModule.forFeature('user', userReducer),
         EffectsModule.forFeature([UserEffects]),
         
-        StoreModule.forFeature('UserMedia', UserMediaReducer),
-        EffectsModule.forFeature([UserMediaEffects]),
+        StoreModule.forFeature('UserGroup', UserGroupReducer),
+        EffectsModule.forFeature([UserGroupEffects]),
         
 		SharedModule
 	],
@@ -195,7 +195,7 @@ const routes: Routes = [
         LayoutUtilsService,
         UserService,
         
-        UserMediaService,
+        UserGroupService,
         
     ],
     entryComponents: [
@@ -209,7 +209,7 @@ const routes: Routes = [
         UserListComponent,
         UserEditComponent,
         
-        UserMediaTabListComponent,
+        UserGroupTabListComponent,
         
     ]
 })

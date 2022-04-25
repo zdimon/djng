@@ -29,6 +29,7 @@ mgr = socketio.AsyncRedisManager('redis://localhost:6379/0')
 #mgr = socketio.RedisManager('redis://')
 sio = socketio.AsyncServer(async_mode='tornado', logger=True, cors_allowed_origins=[
     'http://localhost:4545',
+    'http://localhost:4200',
     'http://localhost'],client_manager=mgr)
 sio.current_connections = []
 CELERY_CONFIG_MODULE='backend.celery'

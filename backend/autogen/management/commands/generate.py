@@ -112,7 +112,6 @@ def gen_tabs(conf):
                 conf['url_delete'] = tab['url_delete']
                 conf['url_update'] = tab['url_update']
                 conf['url_create'] = tab['url_create']
-
                 out = template.render(conf)
                 out = custom_parse(out,conf)
                 with open(out_path, 'w') as f:
@@ -130,7 +129,7 @@ def gen_tabs(conf):
 
 def c_list(conf):
     print('Generating crud... %s' % conf['dirname'])
-    
+    print(conf)
     for i in file_list:
         filename = i.replace('tpl', conf['fileprefix'])
         out_path = os.path.join(OUT_PATH, conf['root'], conf['dirname'],filename)
@@ -162,7 +161,7 @@ class Command(BaseCommand):
         parser.add_argument('name', type=str)
     def handle(self, *args, **options):
         conf_path = '%s/autogen/conf/%s.json' % (BASE_DIR,options['name'])
-        # print('Generating from %s to %s' % (conf_path, out_path))
+        print('Generating from %s ' % conf_path)
         print('Read configuration %s' % conf_path)
         with open(conf_path,'r') as f:
             res = f.read()

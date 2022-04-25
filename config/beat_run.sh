@@ -1,4 +1,4 @@
 #!/bin/bash
-trap "{cat /home/webmaster/neuraldating/backend/backend/celerybeat.pid | xargs kill ; rm /home/webmaster/neuraldating/backend/backend/celerybeat.pid; exit 0; }" SIGHUP SIGINT SIGTERM
+trap "{cat /home/webmaster/cybeready/backend/backend/celerybeat.pid | xargs kill ; rm /home/webmaster/djng/backend/backend/celerybeat.pid; exit 0; }" SIGHUP SIGINT SIGTERM
 sleep 5
-cd /home/webmaster/neuraldating/ && ./bin/start_beat
+cd /home/webmaster/djng/ && ./bin/start_beat

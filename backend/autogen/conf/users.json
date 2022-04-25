@@ -53,17 +53,16 @@
     ],
     "tabs": [
         {
-            "title": "Media", 
-            "class": "UserMedia", 
-            "folder": "user_media", 
-            "selector": "user-media-list",
-            "url_list": "usermedia/api/tab/list",
-            "url_create": "usermedia/api/tab/create",
-            "url_update": "usermedia/api/tab/update",
-            "url_delete": "usermedia/api/tab/delete",
+            "title": "Groups", 
+            "class": "UserGroup", 
+            "folder": "user_group", 
+            "selector": "user-group-list",
+            "url_list": "account/user/group",
+            "url_create": "account/group/create",
+            "url_update": "account/group/update",
+            "url_delete": "account/group/delete",
             "fields": [
-                {"name": "get_small_url_square", "type": "string", "widget": "image", "title": "Image"},
-                {"name": "role_media", "type": "string", "title": "Role media"}
+                {"name": "name", "type": "string", "title": "Name"}
             ]
         }
     ]

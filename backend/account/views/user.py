@@ -5,13 +5,15 @@ from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import User
 from rest_framework import generics
 from account.serializers.user import UserSerializer
+from account.filters.user import UserFilter
+from django_filters.rest_framework import DjangoFilterBackend
 
 class AdminUserListView(generics.ListAPIView):
     serializer_class = UserSerializer
     queryset = User.objects.all()
-    # filter_backends = DjangoFilterBackend,
     filterset_fields = ['username', 'email']
-    #filter_class = UserFilter
+    filter_class = UserFilter
+    filter_backends = DjangoFilterBackend,
 
 class AdminUserView(APIView):
     permission_classes = {IsAuthenticated}
